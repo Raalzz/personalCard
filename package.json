@@ -1,0 +1,48 @@
+{
+  "name": "@raalzz/card",
+  "version": "1.0.0",
+  "description": "A personal card of Rahul Sawant",
+  "main": "/bin/card.js",
+  "bin": {
+    "raalzz": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raalzz/personalCard.git"
+  },
+  "homepage": "https://raalzz.com",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card",
+    "raalzz",
+    "Rahul Sawant"
+  ],
+  "author": "Rahul Sawant <hi@raalzz.com> (https://raalzz.com)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "bugs": {
+    "url": "https://github.com/Raalzz/personalCard/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.registry.github.com/"
+  },
+  "devDependencies": {
+    "boxen": "^4.1.0",
+    "chalk": "^3.0.0",
+    "standard": "^14.3.1"
+  }
+}

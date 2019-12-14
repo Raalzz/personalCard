@@ -41,7 +41,7 @@
     "registry": "https://npm.registry.github.com/"
   },
   "devDependencies": {
-    "boxen": "^4.1.0",
+    "boxen": "^4.2.0",
     "chalk": "^3.0.0",
     "standard": "^14.3.1"
   }

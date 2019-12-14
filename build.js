@@ -15,26 +15,22 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white("               Rahul Sawant"),
-  handle: chalk.white("raalzz"),
-  work: chalk.white("Frontend Developer at Antstack"),
-  twitter: chalk.gray("https://twitter.com/") + chalk.cyan("raalzz"),
-  npm: chalk.gray("https://npmjs.com/") + chalk.red("raalzz"),
-  github: chalk.gray("https://github.com/") + chalk.green("Raalzz"),
-  linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("raalzz"),
+  name: chalk.red.bold("               Rahul Sawant"),
+  handle: chalk.red.bold("raalzz"),
+  work: chalk.green("Frontend Developer at Antstack"),
+  twitter: chalk.green("https://twitter.com/") + chalk.cyan("raalzz"),
+  npm: chalk.green("https://npmjs.com/") + chalk.cyan("raalzz"),
+  github: chalk.green("https://github.com/") + chalk.cyan("Raalzz"),
+  linkedin: chalk.green("https://linkedin.com/in/") + chalk.cyan("raalzz"),
   web: chalk.cyan("https://raalzz.com"),
-  npx:
-    chalk.red("npx") +
-    " " +
-    chalk.white("@raalzz/card  (via GitHub Package Registry)"),
-  labelWork: chalk.white.bold("       Work:"),
-  labelOpenSource: chalk.white.bold("Open Source:"),
-  labelTwitter: chalk.white.bold("    Twitter:"),
-  labelnpm: chalk.white.bold("        npm:"),
-  labelGitHub: chalk.white.bold("     GitHub:"),
-  labelLinkedIn: chalk.white.bold("   LinkedIn:"),
-  labelWeb: chalk.white.bold("        Web:"),
-  labelCard: chalk.white.bold("       Card:")
+  npx: chalk.green("npx") + " " + chalk.green.bold("@raalzz/card"),
+  labelWork: chalk.magenta.bold("       Work", chalk.blue.bold(":")),
+  labelTwitter: chalk.magenta.bold("    Twitter", chalk.blue.bold(":")),
+  labelnpm: chalk.magenta.bold("        npm", chalk.blue.bold(":")),
+  labelGitHub: chalk.magenta.bold("     GitHub", chalk.blue.bold(":")),
+  labelLinkedIn: chalk.magenta.bold("   LinkedIn", chalk.blue.bold(":")),
+  labelWeb: chalk.magenta.bold("        Web", chalk.blue.bold(":")),
+  labelCard: chalk.magenta.bold("       Card", chalk.blue.bold(":"))
 };
 
 // Actual strings we're going to output
@@ -55,7 +51,6 @@ const output =
   newline + // Add one whole blank line
   working +
   newline + // data.labelWork + data.work
-  newline + // data.labelOpenSource + data.opensource
   twittering +
   newline + // data.labelTwitter + data.twitter
   npming +
@@ -71,5 +66,5 @@ const output =
 
 fs.writeFileSync(
   path.join(__dirname, "bin/output"),
-  chalk.green(boxen(output, options))
+  chalk.red(boxen(output, options))
 );

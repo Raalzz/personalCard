@@ -6,9 +6,9 @@
   "bin": {
     "raalzz": "./bin/card.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Raalzz/personalCard.git"
+  " repository ": {
+    " type ": " git ",
+    " url ": " https://github.com/Raalzz/personalCard.git"
   },
   "homepage": "https://raalzz.com",
   "scripts": {
@@ -36,9 +36,6 @@
   ],
   "bugs": {
     "url": "https://github.com/Raalzz/personalCard/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.registry.github.com/"
   },
   "devDependencies": {
     "boxen": "^4.2.0",

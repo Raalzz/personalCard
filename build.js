@@ -29,8 +29,8 @@ const data = {
   labelnpm: chalk.magenta.bold("        npm", chalk.blue.bold(":")),
   labelGitHub: chalk.magenta.bold("     GitHub", chalk.blue.bold(":")),
   labelLinkedIn: chalk.magenta.bold("   LinkedIn", chalk.blue.bold(":")),
-  labelWeb: chalk.magenta.bold("        Web", chalk.blue.bold(":")),
-  labelCard: chalk.magenta.bold("       Card", chalk.blue.bold(":"))
+  labelWeb: chalk.magenta.bold("        Web", chalk.blue.bold(":"))
+  // labelCard: chalk.magenta.bold("       Card", chalk.blue.bold(":"))
 };
 
 // Actual strings we're going to output
@@ -59,10 +59,7 @@ const output =
   newline + // data.labelGitHub + data.github
   linkedining +
   newline + // data.labelLinkedIn + data.linkedin
-  webing +
-  newline +
-  newline + // data.labelWeb + data.web
-  carding; // data.labelCard + data.npx
+  webing;
 
 fs.writeFileSync(
   path.join(__dirname, "bin/output"),
